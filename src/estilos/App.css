@@ -1,0 +1,257 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+h1{
+    font-family: futura-condensed-extra-bold-oblique;
+    color: black;
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+}
+/*Carrito*/
+.carrito{
+    background-color: rgb(194, 93, 93);
+    width: 400px;    
+    padding: 3px;
+    margin: 10px;
+    border-radius: 4px;
+    text-align: center;
+    font-family: "Homer Simpson UI";
+    font-size: smaller;
+    box-shadow:7px 5px 5px rgb(109, 25, 8);
+}
+h4{    
+    color: blanchedalmond;
+}
+/*Producto*/
+.producto{    
+    margin: 10px;
+    padding: 10px;
+    background-color: rgb(245, 245, 245);
+    border-radius: 4px;
+}
+/*Modal*/
+.modalbg{
+    background-color: #383838;
+    height: 54px;
+    align-items: center;
+    display: flex;
+    height: 10vh;
+    padding: 5px;
+}
+.secundario{
+    margin: 0 auto;
+}
+.jordan{
+    position:absolute;
+    top: 0;
+    right: 0;
+    margin: 3px;
+    padding: 3px;
+}
+.titulo-modal{
+    font-size: 34px;
+    background-color: rgb(60, 106, 106);
+    font-family: futura-condensed-extra-bold-oblique;
+    color: honeydew;
+    border-radius: 4px;
+    margin: 3px;
+    padding: 3px;
+}
+.texto-modal{
+    color: rgb(118, 118, 118);
+    font-size: large;
+    font-weight:600;
+}
+/*Footer*/
+.footer{
+    background: #101010;
+    color: #ffffff;
+    height: 250px;
+    justify-content: space-between;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 40px;
+}
+.foot{
+    padding: 10px;
+    background: #101010;
+    color: rgba(238, 232, 232, 0.837);
+    font: icon;
+    font-size: small;
+}
+.video{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+}
+/*Nav*/     
+  .nav-link{
+    color: #76388db9;
+  }
+  .nav-link:hover{
+    color: white;
+    text-decoration: underline;
+    background-color: rgb(226, 43, 43);
+    border-radius: 5%;
+}
+.tamaños{
+    padding: 20px;
+    margin: 15px;
+}
+.centrar{    
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+.navbar.navbar{
+    background-color: rgb(245, 245, 245);
+    padding: 4px;
+    margin: 8px;
+    border-radius: 4px;
+}
+.nav-item{
+    margin-left: 25px;
+}
+@font-face {
+    font-family: futura-condensed-extra-bold-oblique;
+    src: url(./fuentes/futura-condensed-extra-bold-oblique.otf);
+} 
+/*Slider*/
+.slider{
+    margin: 10px;
+    padding: 10px;
+    padding-left: 150px;
+    padding-right: 150px;
+    background-color: rgb(16, 16, 16);
+    border-radius: 4px;
+}
+.carousel-item{
+    height: 90vh;
+    min-height: 350px;
+    background: no-repeat center center scroll;    
+}
+.d-block{   
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(86, 75, 128, 0.4));
+    border-radius: 4px;
+}
+.botones{
+    margin: 2px;
+}
+.transparente{
+    background-color: rgba(0, 255, 255, 0);
+}
+.descripcion{
+    color:black;
+    background-color: rgba(232, 223, 207, 0.85);
+    font: small-caption;
+}
+h3{
+    font-size: 20px;
+    background-color:#101010;
+    font-family:Arial, Helvetica, sans-serif;
+    margin-left: 150px;
+    margin-right: 150px;
+    border-radius: 10px;
+}
+.flechas{
+    background-color: black;
+    color: #000;
+}
+
+
+/*MediaQueries*/
+
+@media (max-width: 1025px) { 
+    
+    h3{
+        font-size: 20px;
+    }
+}
+
+
+@media (max-width: 1096px) { 
+
+    h3{
+        font-size: 15px;
+        margin-left: 100px;
+        margin-right: 100px;
+    }
+    .footer{
+    flex-direction: column;
+    }    
+}
+
+@media (min-width: 890px) { 
+    
+    
+    .d-block{
+        height: 750px;
+        width: 500px;
+    }
+}
+@media (max-width: 890px) { 
+
+    .slider{
+        margin: 1px;
+        padding: 1px;
+        padding-left: 30px;
+        padding-right: 30px;
+        background-color: black;
+    }
+    h3{
+        font-size: 13px;
+        margin-left: 35px;
+        margin-right: 35px;
+    }
+}
+
+
+@media (max-width: 620px) { 
+
+    .slider{
+        margin: 1px;
+        padding: 1px;
+        padding-left: 10px;
+        padding-right: 10px;
+        background-color: black;
+    }
+}    
+@media (max-width: 525px) { 
+    
+    .slider{
+        margin: 1px;
+        padding: 1px;
+        padding-left: 1px;
+        padding-right: 1px;
+        background-color: black;
+    }
+    h3{
+        font-size: 10px;        
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+}
+@media (max-width: 230px) { 
+    
+    .jordan{
+        position:relative;
+        top: 0;
+        right: 0;
+        padding: 1px;
+    }
+}
+
+
+           
+
+  
+
+
+
+       /*
+       */
