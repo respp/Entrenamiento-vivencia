@@ -41,8 +41,23 @@ h4{
     height: 10vh;
     padding: 5px;
 }
-.secundario{
-    margin: 0 auto;
+.botones-modal{
+    margin: 2px;
+}
+.formulario-modal{
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    padding: 5px;color: rgb(118, 118, 118);
+    font-size: large;
+    font-weight:600;
+}
+.texto1, .texto2{
+    margin: 10px;
+    width: 400px;
+    height: 45px;
 }
 .jordan{
     position:absolute;
@@ -60,11 +75,6 @@ h4{
     margin: 3px;
     padding: 3px;
 }
-.texto-modal{
-    color: rgb(118, 118, 118);
-    font-size: large;
-    font-weight:600;
-}
 /*Footer*/
 .footer{
     background: #101010;
@@ -76,10 +86,10 @@ h4{
     align-items: center;
     padding: 40px;
 }
-.foot{
+.texto-footer{
     padding: 10px;
     background: #101010;
-    color: rgba(238, 232, 232, 0.837);
+    color: rgba(192, 187, 187, 0.837);
     font: icon;
     font-size: small;
 }
