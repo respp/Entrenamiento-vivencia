@@ -1,6 +1,11 @@
 import React from 'react';
-const Producto = ({producto, carrito, agregarProducto, productos}) => {
-    const {nombre,precio,id}=producto;
+import {Button, Card} from 'react-bootstrap';
+import Modall from './Modal';
+
+
+    const Producto = ({producto, carrito, agregarProducto, productos}) => {
+    const {nombre,precio,id,img}=producto;
+
 
     //Agregando al carrito
     const seleccionarProducto= id=>{
@@ -16,25 +21,48 @@ const Producto = ({producto, carrito, agregarProducto, productos}) => {
 
         agregarProducto(productos)
     } 
+
+
     return ( 
-        <div className='producto'>
-            <h2>{nombre}</h2>
-            <h2>${precio}</h2>
-            {productos 
-            ?
-            (
-                <button type= "button"
-                onClick={ ()=> seleccionarProducto(id)}
-                >Comprar</button>
-            )
-            :
-            (
-                <button type= "button"
-                onClick={ ()=> eliminarProducto(id)}
-                >Eliminar</button>
-            )
-            }
-        </div>
+
+
+        
+        
+<div className='col-4 my-3 '>
+
+
+            <Card >
+            <Card.Img variant="top" src={img} />
+            <Card.Body>
+                <Card.Title>{nombre}</Card.Title>
+                <Card.Text>
+                    ${precio}
+                </Card.Text>
+
+                    {productos 
+                    ?
+                    (
+                        <Button type= "button" onClick={ ()=> seleccionarProducto(id)} >Seleccionar</Button>
+                    )
+                    :
+                    (
+                        <div>
+                        <Button type= "button" className="mx-3" onClick={ ()=> eliminarProducto(id)} >Eliminar</Button>
+                        <Modall/>
+                        
+                        
+                        </div>
+                    )
+                    }
+
+                
+            </Card.Body>
+            </Card>
+
+
+
+            </div>
+           
     );
 }
  
