@@ -1,14 +1,14 @@
 Tarea 1:
 Montar Ambiente
-vamos a hacer una minima web, del tema que uds quieran. Solo Home, que tenga mínimas cosas:
+Crear página con:
 
 Menú que sea para recorrer 1 page.
-Carrucel con 3 slyder con cada uno Call to Action a algún lugar
+Carrucel con 3 slyder con cada uno Call to Action
 Y que tenga algunas secciones el home, para que el recorrido sea bonito
 
 Tarea 2:
 
-Crear un modal, que se abra desde un boton en la parte superior, y que éste tenga para poder elegir y conecte a 1 billetera que maneje Token ERC-777.
+Crear un modal con conexion a billetera que maneje Token ERC-777.
 
 
 
