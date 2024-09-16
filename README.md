@@ -1,14 +1,14 @@
-Tarea 1:
-Montar Ambiente
-Crear página con:
+**Task 1:**
+Set up Environment  
+Create a page with:
 
-Menú que sea para recorrer 1 page.
-Carrucel con 3 slyder con cada uno Call to Action
-Y que tenga algunas secciones el home, para que el recorrido sea bonito
+- A menu to navigate a one-page site.
+- A carousel with 3 slides, each with a Call to Action.
+- Include several sections on the homepage to make the navigation visually appealing.
 
-Tarea 2:
+**Task 2:**
 
-Crear un modal con conexion a billetera que maneje Token ERC-777.
+Create a modal with a wallet connection that handles ERC-777 tokens.
 
 
 
